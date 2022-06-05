@@ -3,9 +3,46 @@
     padding:0;
     box-sizing: border-box;
 }
+
 body {
     width: 100%;
     min-height: 100vh;
+}
+
+.menu-item{
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  height: 30rem;
+  background-color: rgb(240, 232, 221);
+  /* border: .1em solid grey; */
+  border-radius: 10px;
+  margin: 3rem;
+}
+.photo {
+  object-fit: fill;
+  /* width: 100px; */
+  height: 13rem; 
+  /* border: 1px solid seagreen; */
+  border-radius: 10px 10px 0px 0px;
+}
+.item-info{
+  /* padding: 1rem; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.item-info header {
+  justify-content: center;
+  margin-top: 1rem;
+}
+.item-info h4 {
+  justify-content: center;
+  /* margin-top: 1rem; */
+}
+.item-text {
+  text-align: center;
+  margin: 1rem;
 }
 
 .header{
