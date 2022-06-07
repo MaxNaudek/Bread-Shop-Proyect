@@ -4,9 +4,13 @@
     box-sizing: border-box;
 }
 
-body {
+/* body {
     width: 100%;
     min-height: 100vh;
+} */
+.section-center {
+  display: inline-block;
+  border: 1px solid rgb(210, 12, 36)
 }
 
 .menu-item{
