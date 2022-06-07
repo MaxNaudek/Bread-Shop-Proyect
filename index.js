@@ -32,8 +32,7 @@ const menu = [
         description: `Mejor que una mantecada, más gordo que una dona!`,
     }
 ]
-// array=[1,2,3,4,5,4,4]
-// console.log(array.filter(e=>e===4));
+
 const cardbread= document.querySelector(".section-center");
 const buttonContainer= document.querySelector(".button-container");
 const buttons= document.querySelectorAll(".filter-btn");
@@ -58,7 +57,7 @@ function unfoldMenu(callbackMenu) {
     </article>`
   )
   // console.log(completeMenu)
-cardbread.innerHTML = completeMenu
+cardbread.innerHTML = completeMenu.join('')
 }
 
 //Al usar querySelectorAll solo se pueden llamar elementos usando el forEach para tener acceso a cada uno de los elementos con la misma clase.
@@ -77,23 +76,9 @@ cardbread.innerHTML = completeMenu
   })
   if (dataCategory==="all") {
     unfoldMenu(menu)
-     return unfoldMenu(menu)
+
   } else{
     unfoldMenu(categoriesMenu)
   }
-  // return (categoriesMenu)
   })
 })
-//    if (element.category===dataCategory) {
-//     return element
-//     }
-//   })
-// if (dataCategory=="all"){ unfoldMenu()
-//   } else {
-//   unfoldMenu(categoriesMenu)
-//   }
-//
-// console.log(categoriesMenu);
-//  // console.log(dataCategory);
-//
-//   });
