@@ -140,12 +140,12 @@ function unfoldMenu(callbackMenu) {
       <img src=${e.img} alt=${e.title} class="photo" />
       <div class="item-info">
         <header>
-          <h4>${e.title}</h4>
+          <h5>${e.title}</h5>
         </header>
         <p class="item-text">
           ${e.description}
         </p>
-        <h4 class="price">${e.price}</h4>
+        <h5 class="price">${e.price}</h5>
       </div>
     </article>`
   )
@@ -160,12 +160,11 @@ cardbread.innerHTML = completeMenu.join('')
    //console.log(dataCategory);
 
   const categoriesMenu = menu.filter(function (element){
-    if (element.category===dataCategory) {
+    if (element.category===dataCategory || element.category2===dataCategory) {
       console.log(element)
       return element
     }
 
-    // console.log(element.category);
   })
   if (dataCategory==="all") {
     unfoldMenu(menu)
