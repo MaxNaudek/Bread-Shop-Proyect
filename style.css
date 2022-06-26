@@ -240,3 +240,161 @@ a{
     min-width: 150px; */
   /* }
 }  */
+
+
+/* --------Footer------- */
+footer{
+	background: #4F3711;
+	box-sizing: border-box;
+  border-radius: 10px 10px 0 0;
+	width: 80%;
+  display: flex;
+  margin-left: 11.5rem;
+  margin-top: 8rem;
+	text-align: left;
+	padding: 2rem 3rem;
+  font-family: 'News Cycle';
+  color: #c5ad89
+}
+.footer-left{
+  width: 40%;
+
+}
+.logo-name{
+  font-size: 4em;
+  font-family: 'Reenie Beanie';
+  font-weight: 500;
+  color: #D8D060;
+}
+
+/* Footer links */
+
+.footer-links{
+	color: #b49e7c;
+	margin: 0;
+	padding: 0;
+  font-size: 1.5rem;
+}
+.footer-links a{
+	display:inline-block;
+	line-height: 2rem;
+  color: #c5ad89;
+}
+
+.footer-company-name{
+	color:  #D8D060;
+	font-size: 1rem;
+	margin-top: 1rem;
+}
+
+/* Footer Center */
+.footer-center{
+	width: 35%;
+}
+.footer-center i{
+	background-color:  #D8D060;
+	color: #4F3711;
+	font-size: 20px;
+	width: 34px;
+	height: 34px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 35px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+.footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+.footer-center p{
+	display: inline-block;
+	color: #c5ad89;
+  font-weight:400;
+	vertical-align: middle;
+  margin: 0;
+  font-size: 1.5rem;
+}
+.footer-center p span{
+	display:block;
+	font-size: 1rem;
+	line-height: 5px;
+}
+
+.footer-center p a{
+	color:  #c5ad89;
+	text-decoration: none;;
+}
+
+.footer-links a:before {
+  content: "|";
+  font-weight:500;
+  font-size: 25px;
+  margin-right: .2rem;
+  margin-left: .2rem;
+  color: #D8D060;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-right{
+	width: 20%;
+}
+.footer-company-about{
+	line-height: 1.3rem;
+	color:  #c5ad89;
+	font-size: 1.2rem;
+	margin: 0;
+}
+.footer-company-about span{
+	display: block;
+	color:  #c5ad89;
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-bottom: 1rem;
+}
+.footer-icons{
+	margin-top: 25px;
+}
+.footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #342309;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #D8D060;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+}
