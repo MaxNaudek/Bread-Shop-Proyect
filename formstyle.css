@@ -112,10 +112,24 @@ button:nth-child(1){
   height: 2.5rem;
 }
 
-.register{
+.sucessMessage{
  display:flex;
  justify-content: center;
  margin-top: 20rem;
  font-size: 3.3rem;
  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;;
+}
+
+#testButton {
+  display:flex;
+  font-size: 2.0rem;
+  margin: 0 auto;
+  padding: 5px;
+  margin-top: 20px;
+  border-radius: 10px;
+
+}
+.redirect{
+  margin-top: 30px;
+  text-align: center;
 }
