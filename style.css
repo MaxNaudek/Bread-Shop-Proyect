@@ -41,6 +41,7 @@ html::-webkit-scrollbar-track{
   font-family: 'Reenie Beanie';
   font-weight: 500;
 }
+
 a{
   cursor: pointer;
   text-decoration: none;
@@ -212,6 +213,7 @@ a{
   position: sticky; 
   top: 10vh;
 }
+
 .filter-btn {
   margin: 12.2%;
   height: 25%;
