@@ -24,17 +24,18 @@ html::-webkit-scrollbar-track{
 /* -----NAVBAR------ */
 .navbar{
   display: flex;
-  height: 5rem;
+  padding: 1%;
   margin: auto;
   width: 80%;
   margin-top: 2rem;
   background-color: #D8D060;
-  font-size: 2.2em;
+  font-size: clamp(14px, 2.2vw, 2.4rem);
   font-family: 'Reenie Beanie';  
   justify-content: space-evenly;
   align-items: center;
   border-radius: 10px 10px 0 0;
 }
+
 .title-nav{
   font-size: 1.5em;
   font-family: 'Reenie Beanie';
@@ -55,7 +56,6 @@ a{
 }
 
 /* -----SLIDESHOW----- */
-* {box-sizing:border-box}
 
 /* Slideshow container */
 .slideshow-container {
@@ -80,7 +80,7 @@ a{
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: -22px;
+  /* margin-top: -22px; */
   padding: 16px;
   color: #D8D060;
   font-weight: bold;
@@ -140,16 +140,17 @@ a{
 .section-center {
   display: flex;
   /* border: 1px solid rgb(210, 12, 36); */
-  width: 72rem;
+  /* width: 72rem; */
+  width: 74%;
   flex-wrap: wrap;
-  margin-top: 1rem;
+  margin-top: 1%;
 }
 
 /* -----BREAD CARDS----- */
 .menu-item{
   display: flex;
   flex-direction: column;
-  width: 17rem;
+  width: max(22%, 90px);
   background-color: #F0DAD5;
   box-shadow: rgba(79, 55, 17, 0.5) 0 -1px 3px 0 inset, rgba(79, 55, 17, 0.2) 0 2px 3px 0;
   border-radius: 10px;
@@ -201,17 +202,19 @@ a{
   display: flex;
   flex-direction: column;
   background-color: #F0DAD5;
-  height: 34rem;
-  width: 14%;
-  margin-top: 4rem;
-  margin-right: 4rem;
+  height: 34rem; 
+  width: max(10.5rem, 13.5vw);
+  /* width: 7.5rem; */
+  /* width: 13.5vw; */
+  margin-top: 4%;
+  margin-right: 4%;
   border-radius: 10px;
-  position: sticky;
-  top: 20px;
+  position: sticky; 
+  top: 10vh;
 }
 .filter-btn {
-  margin: 1.2em;
-  height: 3rem;
+  margin: 12.2%;
+  height: 25%;
   align-items: center;
   background-color: #D8D060;
   border-radius: 10px;
@@ -223,9 +226,9 @@ a{
   cursor: pointer;
   font-family: 'News Cycle';
   font-weight: 600;
-  font-size: 1.3rem;
-  min-height: 56px;
-  min-width: 120px;
+  font-size: 120.3%;
+  /* min-height: 56px; */
+  /* min-width: 120px;  */
   text-align: center;
   user-select: none;
   transition: all .2s cubic-bezier(.22, .61, .36, 1);
