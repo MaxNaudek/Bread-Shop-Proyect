@@ -13,18 +13,15 @@ url.forEach((value, titleName) =>{
     // sucessMessage.append(`${value}`)
     // sucessMessage.append(document.createElement('br'))
 })
-$sucessMessage.innerHTML = `Apreciable, ${values[0]} su registro fue exitoso! ⭐` 
+$sucessMessage.innerHTML = `Apreciable, ${values[0]}, su registro fue exitoso! ⭐` 
 $testButton.innerHTML= `Regresar`
 
+$testButton.addEventListener("click", (e) => { 
+  window.location.href="index.html"
+})
 
 setTimeout(()=>{$redirect.innerHTML= `Será redirigido automáticamente en unos momentos...`}, 3000)
 
-
-
-
-$testButton.addEventListener("click", (e) => { 
-    window.location.href="index.html"
-  })
 
   //Esto no tiene ninguna utilidad pero es un recordatorio del append
 $sucessMessage.append(breakLine)

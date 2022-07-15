@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&family=Reenie+Beanie&display=swap');
+
+*, *:before, *:after {
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+/* -----SCROLLBAR------ */
+html::-webkit-scrollbar {
+  width: max(20px, 1vw);
+}
+html::-webkit-scrollbar-thumb {
+  background-color : #D8D060;
+  box-shadow: rgba(79, 55, 17, 0.5) 0 1px 4px 0 inset, rgba(79, 55, 17, 0.5) 0 2px 3px 0;
+  /* border: 1px solid #88601E; */
+  border-radius:50px;
+}
+html::-webkit-scrollbar-track{
+  background-color : #F0DAD5;
+  /* border-radius:50px; */
+}
+
+/* -----NAVBAR------ */
+.navbar{
+  display: flex;
+  padding: 1%;
+  margin: auto;
+  width: 80%;
+  margin-top: 2rem;
+  background-color: #D8D060;
+  font-size: clamp(14px, 2.2vw, 2.4rem);
+  font-family: 'Reenie Beanie';  
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 10px 10px 0 0;
+}
+
+.title-nav{
+  font-size: 1.5em;
+  font-family: 'Reenie Beanie';
+  font-weight: 500;
+}
+
+a{
+  cursor: pointer;
+  text-decoration: none;
+  color: #4F3711;
+}
+.nav-menu:hover{
+  animation:nav-menu .3s forwards
+}
+@keyframes nav-menu {
+  100%{
+   transform: scale(1.2);
+  }
+}
+
+/* -----SLIDESHOW----- */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 80%;
+  position: relative;
+  margin: auto;
+  border-radius: 0 0 10px 10px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.image-slide{
+  border-radius: 0 0 10px 10px;
+  width: 100%
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  /* margin-top: -22px; */
+  padding: 16px;
+  color: #D8D060;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #D8D060;
+  color: #4F3711;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  position: relative;
+  bottom: 30px;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 10px;
+  background-color: #F0DAD5;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #D8D060;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .8}
+  to {opacity: 1}
+}
+
+/* -----MAIN CONTAINER----- */
+.main-container{
+  display: flex;
+  justify-content: center;
+  border-radius: 1px;
+}
+.section-center {
+  display: flex;
+  /* border: 1px solid rgb(210, 12, 36); */
+  /* width: 72rem; */
+  width: 74%;
+  flex-wrap: wrap;
+  margin-top: 1%;
+}
+
+/* -----BREAD CARDS----- */
+.menu-item{
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  background-color: #F0DAD5;
+  box-shadow: rgba(79, 55, 17, 0.5) 0 -1px 3px 0 inset, rgba(79, 55, 17, 0.2) 0 2px 3px 0;
+  border-radius: 10px;
+  margin: 3rem;
+}
+.photo {
+  object-fit: cover;
+  height: 13rem;
+  border-radius: 10px 10px 0px 0px;
+}
+.item-info{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-family: 'News Cycle';
+  font-size: 1.2rem;
+  color: #4F3711;
+}
+.item-info header {
+  font-size: 2rem;
+  justify-content: center;
+  margin-top: 1rem;
+  border-bottom: 1px solid #4F3711
+}
+.item-text {
+  text-align: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: .5rem;
+}
+.price {
+  margin-top: .5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+.menu-item:hover{
+  animation:menu-item .3s forwards
+}
+@keyframes menu-item {
+  100%{
+    transform: scale(1.1);
+  }
+}
+
+/* -----BUTTON CONTAINER----- */
+.button-container{
+  display: flex;
+  flex-direction: column;
+  background-color: #F0DAD5;
+  height: 34rem; 
+  width: max(10.5rem, 13.5vw);
+  /* width: 7.5rem; */
+  /* width: 13.5vw; */
+  margin-top: 4%;
+  margin-right: 4%;
+  border-radius: 10px;
+  position: sticky; 
+  top: 10vh;
+}
+
+.filter-btn {
+  margin: 12.2%;
+  height: 25%;
+  align-items: center;
+  background-color: #D8D060;
+  border-radius: 10px;
+  /* border: 1px solid #88601E; */
+  border: none;
+  box-shadow: rgba(79, 55, 17, 0.5) 0 -1px 3px 0 inset, rgba(79, 55, 17, 0.2) 0 2px 3px 0;
+  box-sizing: border-box;
+  color: #4F3711;
+  cursor: pointer;
+  font-family: 'News Cycle';
+  font-weight: 600;
+  font-size: 120.3%;
+  /* min-height: 56px; */
+  /* min-width: 120px;  */
+  text-align: center;
+  user-select: none;
+  transition: all .2s cubic-bezier(.22, .61, .36, 1);
+}
+.filter-btn:hover {
+  background-color: #DAC464;
+  transform: translateY(-3px);
+}
+/* @media (min-width: 768px) {
+  .filter-btn {
+    /* padding: 16px 44px;
+    min-width: 150px; */
+  /* }
+}  */
+
+
+/* --------Footer------- */
+footer{
+	background: #4F3711;
+	box-sizing: border-box;
+  border-radius: 10px 10px 0 0;
+	width: 80%;
+  display: flex;
+  margin-left: 11.5rem;
+  margin-top: 8rem;
+	text-align: left;
+	padding: 2rem 3rem;
+  font-family: 'News Cycle';
+  color: #c5ad89
+}
+.footer-left{
+  width: 40%;
+
+}
+.logo-name{
+  font-size: 4em;
+  font-family: 'Reenie Beanie';
+  font-weight: 500;
+  color: #D8D060;
+}
+
+/* Footer links */
+
+.footer-links{
+	color: #b49e7c;
+	margin: 0;
+	padding: 0;
+  font-size: 1.5rem;
+}
+.footer-links a{
+	display:inline-block;
+	line-height: 2rem;
+  color: #c5ad89;
+}
+
+.footer-company-name{
+	color:  #D8D060;
+	font-size: 1rem;
+	margin-top: 1rem;
+}
+
+/* Footer Center */
+.footer-center{
+	width: 35%;
+}
+.footer-center i{
+	background-color:  #D8D060;
+	color: #4F3711;
+	font-size: 20px;
+	width: 34px;
+	height: 34px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 35px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+.footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+.footer-center p{
+	display: inline-block;
+	color: #c5ad89;
+  font-weight:400;
+	vertical-align: middle;
+  margin: 0;
+  font-size: 1.5rem;
+}
+.footer-center p span{
+	display:block;
+	font-size: 1rem;
+	line-height: 5px;
+}
+
+.footer-center p a{
+	color:  #c5ad89;
+	text-decoration: none;;
+}
+
+.footer-links a:before {
+  content: "|";
+  font-weight:500;
+  font-size: 25px;
+  margin-right: .2rem;
+  margin-left: .2rem;
+  color: #D8D060;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-right{
+	width: 20%;
+}
+.footer-company-about{
+	line-height: 1.3rem;
+	color:  #c5ad89;
+	font-size: 1.2rem;
+	margin: 0;
+}
+.footer-company-about span{
+	display: block;
+	color:  #c5ad89;
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-bottom: 1rem;
+}
+.footer-icons{
+	margin-top: 25px;
+}
+.footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #342309;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #D8D060;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+}

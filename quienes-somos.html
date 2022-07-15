@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="style-form.css">
-    <script src="https://kit.fontawesome.com/21c6f68d11.js" crossorigin="anonymous"></script>
-    <title>Mi cuenta</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style-quienes-somos.css">
+  <title>Quiénes somos</title>
+  <script src="https://kit.fontawesome.com/21c6f68d11.js" crossorigin="anonymous"></script>
 </head>
 
+<!-- <body id="container-grid"> -->
 <body>
     <header class="navbar">
         <a class="nav-menu" href="/quienes-somos.html">Quiénes somos</a>
         <a class="nav-menu" href="/index.html">Productos</a>
         <a class="title-nav nav-menu" href="https://www.youtube.com/watch?v=ZoVCM5iUaL0" target="_blank">BreadProject</a>
         <a class="nav-menu" href="contacto.html">Contacto</a>
-        <a class="nav-menu" href="form.html">Mi cuenta</a>
+        <a class="nav-menu" href="form.html"> Mi cuenta</a>
     </header>
 
     <!-- Slideshow container -->
     <div class="slideshow-container">
-
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
-            <img class="image-slide" src="./images/carrousel1.jpg" >
+        <img class="image-slide" src="./images/carrousel1.jpg" >
         </div>
 
         <div class="mySlides fade">
-            <img class="image-slide" src="./images/carrousel2.jpg" >
+        <img class="image-slide" src="./images/carrousel2.jpg" >
         </div>
 
         <div class="mySlides fade">
-            <img class="image-slide" src="./images/carrousel3.jpg" >
+        <img class="image-slide" src="./images/carrousel3.jpg" >
         </div>
 
         <!-- Next and previous buttons -->
@@ -47,49 +47,24 @@
         </div>
     </div>
 
-<!----- FORM  ----->
-
- <h1 class="Register-Form" id="Register-Form">¡Regístrate con nosotros!</h1>
-
- <div class="error-Validation"></div>
- 
-    <form class="form-container" method="GET" action="greetings.html" > 
-        <!-- action="greetings.html" -->
-     <div class="divform name">
-        <label for="name"> Nombre</label>
-        <input id="name" type="text" name="name" >
+    <div class="main-container">
+      <div class="description">
+        <h1>Quiénes somos</h1>
+        <p>Proyecto Pan es una panadería fundada en el 2022 por Max y Jacqui, 
+          aficionados al pan dulce y de buena calidad. Si como ellos, eres 
+          un amante de las masas finas y azucaradas este es el lugar perfecto 
+          para ti. <br/> Encuentra desde lo más tradicional hasta panes clásicos europeos 
+          y no te vayas sin haber probado nuestros especiales de temporada. ⭐</p>
+      </div>
+      <div class="photo" >
+        <img src="https://cdn.foodandwineespanol.com/2021/01/C%CC%A7uina.jpg"/>
+      </div>
     </div>
 
-    <div class="divform lastname">
-        <label for="lastname">Apellido</label>
-        <input id="lastname" type="text" value="" name="lastname" required >
-    </div>
-
-    <div class="divform mailname">
-        <label for="mailname">Correo</label>
-        <input id="mailname" type="text"  name="mailname" required>
-    </div>
-
-    <div class="divform password">
-        <label for="password">Contraseña</label>
-        <input id="password" type="password" id="password" name="password" required>
-    </div>
-
-    <div class="divform confirmpassword">
-        <label for="confirmpassword">Confirmar Contraseña</label>
-        <input type="password" id="confirmpassword" name="confirmpassword" required>
-    </div>
-
-    <div class="form-buttons">
-        <button type="submit">Enviar</button>
-        <button type="reset">Reset</button>
-    </div>
- </form>
-
- <!-- ------Footer-------- -->
-<footer>
-
-    <div class="footer-left">
+    <!-- ------Footer-------- -->
+    <footer>
+      
+      <div class="footer-left">
         <h3 class="logo-name">BreadProject</h3>
         <p class="footer-links">
           <a href="quienes-somos.html" class="link-1">Quiénes somos</a>
@@ -98,12 +73,12 @@
           <a href="form.html">Mi cuenta</a>
         </p>
         <p class="footer-company-name">BreadProject © 2022</p>
-    </div>
-  
-    <div class="footer-center">
-      <div>
-        <i class="fa fa-map-marker"></i>
-        <p>Querétaro | CDMX</p>
+      </div>
+      
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p>Querétaro | CDMX</p>
       </div>
       <div class="phone">
         <i class="fa fa-phone"></i>
@@ -114,11 +89,11 @@
         <p><a href="mailto:breadproject@company.com">breadproject@company.com</a></p>
       </div>
     </div>
-  
+    
     <div class="footer-right">
       <p class="footer-company-about">
         <span>Sobre nosotros</span>
-      Vendemos pancito dulce: tradicionales, especiales y de temporada.
+        Vendemos pancito dulce: tradicionales, especiales y de temporada.
       </p>
       <div class="footer-icons">
         <a href="#"><i class="fa fa-facebook"></i></a>
@@ -129,6 +104,7 @@
     </div>
   </footer>
 
- <script src="form.js" charset="utf-8"></script>
+  <script src="index.js" charset="utf-8"></script>
 </body>
-</html>                    
+</html>
+

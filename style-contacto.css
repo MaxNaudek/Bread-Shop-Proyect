@@ -2,13 +2,13 @@
 
 *, *:before, *:after {
   margin: 0;
-  padding:0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 /* -----SCROLLBAR------ */
 html::-webkit-scrollbar {
-  width: 1.1vw;
+  width: max(20px, 1vw);
 }
 html::-webkit-scrollbar-thumb {
   background-color : #D8D060;
@@ -47,7 +47,6 @@ a{
   text-decoration: none;
   color: #4F3711;
 }
-
 .nav-menu:hover{
   animation:nav-menu .3s forwards
 }
@@ -71,13 +70,11 @@ a{
 /* Hide the images by default */
 .mySlides {
   display: none;
-  
 }
 
 .image-slide{
   border-radius: 0 0 10px 10px;
   width: 100%
-
 }
 
 /* Next & previous buttons */
@@ -139,38 +136,23 @@ a{
 
 /* -----MAIN CONTAINER----- */
 .main-container{
-  /* background-color: aqua; */
   display: flex;
+  flex-direction: column;
   max-width: 80%;
   margin-top: 3rem;
   margin-left: 10%;
-  /* justify-content: center; */
-  border-radius: 1px;
-}
-.description{
-  /* background-color: #4F3711; */
   font-family: 'News Cycle';
-  width: 40%;
 }
-p{
-  font-size: 1.5rem;
+.list{
+  margin-top: 1rem;
+  font-size: x-large;
+  /* background-color: #342309; */
+}
+li{
   margin-top: 2rem;
-  /* padding-right: 2rem; */
-  /* background-color: #D8D060; */
 }
-.photo{
-  /* background-color: brown; */
-  /* margin-left: 2rem;
-  max-width: 20rem; */
-  width: 60%;
-  display: flex;
-  object-fit: cover;
-  justify-content: end;
-}
-img{
-  width: 90%;
-  object-fit: cover;
-  border-radius: 10px;
+.main-container i{
+  color:#4F3711;
 }
 
 /* --------Footer------- */
@@ -180,6 +162,7 @@ footer{
   border-radius: 10px 10px 0 0;
 	width: 80%;
   display: flex;
+  justify-content: center;
   margin-left: 11.5rem;
   margin-top: 8rem;
 	text-align: left;
